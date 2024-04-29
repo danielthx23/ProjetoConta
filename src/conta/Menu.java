@@ -1,11 +1,20 @@
 package conta;
 
 import java.util.Scanner;
+import conta.model.Conta;
 import conta.util.Cores;
 
 public class Menu {
 
 	public static void main(String[] args) {
+
+		Conta c1 = new Conta(1, 123, 1, "Daniel", 10000.0f);
+		c1.visualizar();
+		c1.sacar(10000.0f);
+		c1.visualizar();
+		c1.depositar(7000.0f);
+		c1.visualizar();
+
 		Scanner leia = new Scanner(System.in);
 
 		int opcao;
@@ -58,7 +67,6 @@ public class Menu {
 				break;
 			case 6:
 				System.out.println(Cores.TEXT_WHITE + "Saque\n\n");
-
 				break;
 			case 7:
 				System.out.println(Cores.TEXT_WHITE + "Depósito\n\n");
@@ -85,9 +93,9 @@ public class Menu {
 
 	public static void sobre() {
 		System.out.println("\n*********************************************************");
-		System.out.println("Projeto Desenvolvido por: Daniel Saburo Akiyama");
-		System.out.println("Generation Brasil - generation@generation.org");
-		System.out.println("github.com/conteudoGeneration");
+		System.out.println("Projeto Desenvolvido por: ");
+		System.out.println("Daniel Saburo Akiyama - danielakiyama8@gmail.com");
+		System.out.println("https://github.com/danielthx23");
 		System.out.println("*********************************************************");
 	}
 
