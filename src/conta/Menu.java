@@ -200,9 +200,9 @@ public class Menu {
 				break;
 			case 8:
 				System.out.println(Cores.TEXT_RESET + "Transferência entre Contas\n");
+				
 				System.out.println("Digite o Numero da Conta de Origem: ");
 				numero = leia.nextInt();
-				
 				System.out.println("Digite o Numero da Conta de Destino: ");
 				numeroDestino = leia.nextInt();
 				
